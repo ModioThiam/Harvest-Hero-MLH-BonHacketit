@@ -5,7 +5,7 @@ const url = "mongodb+srv://new_user_fa:abcd1234@foodwasteappcluster.agzjn6e.mong
 const client = new MongoClient(url);
 
 // The database to use
-const dbName = "test";
+const dbName = "participating_locations";
 
 async function run() {
     try {
@@ -13,20 +13,22 @@ async function run() {
         console.log("Connected correctly to server");
         const db = client.db(dbName);
 
-        // Use the collection "people"
-        const col = db.collection("people");
+        // Use the collection "{insert name of the collection here}"
+        const col = db.collection("Farms");
 
         // Construct a document                                                                                                                                                              
-        let personDocument = {
-            "name": { "first": "Alan", "last": "Turing" },
-            "birth": new Date(1912, 5, 23), // May 23, 1912                                                                                                                                 
-            "death": new Date(1954, 5, 7),  // May 7, 1954                                                                                                                                  
-            "contribs": ["Turing machine", "Turing test", "Turingery"],
-            "views": 1250000
+        let document = {
+            "name": "Wendy's",
+            "address": "1234 Main St",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10001",
+            "phone": "212-555-1212",
+            "contact": {"name": "John Smith", "phone": "212-555-1212"}        
         }
 
         // Insert a single document, wait for promise so we can read it back
-        const p = await col.insertOne(personDocument);
+        const p = await col.insertOne(document);
         // Find one document
         const myDoc = await col.findOne();
         // Print to the console
