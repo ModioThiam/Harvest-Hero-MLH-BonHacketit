@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SMSForm from './SMSForm';
+import './restaurant.css';
 
 function Restaurant() {
   const [name, setName] = useState('');
