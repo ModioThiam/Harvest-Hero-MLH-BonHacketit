@@ -22,7 +22,7 @@ function Header() {
                         <img alt="Farms" src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style={{ width: '300px', height: '200px' }} ></img>
                         <img alt="Grocery Stores" src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" style={{ width: '300px', height: '200px' }} ></img>
                         <div class="text-container">
-                        <p><Link to="/restaurant">Register your business</Link></p>
+                        <button><Link to="/restaurant">Register your business</Link></button>
                                 <Routes>
                                     <Route path="/restaurant" element={<Restaurant />} />
                                     <Route path="/farm" element={<Farm />} />

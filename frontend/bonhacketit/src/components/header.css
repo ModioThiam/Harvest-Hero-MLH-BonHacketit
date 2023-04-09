@@ -30,7 +30,9 @@ nav a {
     font-weight: bold;
 }
 
+
 main section {
+    margin: 40px;
     padding: 40px;
 }
 
