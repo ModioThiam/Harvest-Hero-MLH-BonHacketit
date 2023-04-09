@@ -19,12 +19,10 @@ function Header() {
 
                     <div class="container">
                         <img alt="Restaurants" src="https://media.discordapp.net/attachments/1093600618347778212/1094341128809091173/annie-spratt-oT7_v-I0hHg-unsplash.jpg?width=867&height=577" style={{ width: '300px', height: '200px' }}></img>
-                            <p><Link to="/restaurant">Restaurants</Link></p>
                         <img alt="Farms" src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style={{ width: '300px', height: '200px' }} ></img>
-                            <p><Link to="/farm">Farms</Link></p>
                         <img alt="Grocery Stores" src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" style={{ width: '300px', height: '200px' }} ></img>
-                            <p><Link to="/grocerystore">SMSForm</Link></p>
                         <div class="text-container">
+                        <p><Link to="/restaurant">Register your business</Link></p>
                                 <Routes>
                                     <Route path="/restaurant" element={<Restaurant />} />
                                     <Route path="/farm" element={<Farm />} />

@@ -5,6 +5,7 @@ class SMSForm extends Component {
     return (
       <form>
         <div>
+          <label htmlFor="to">Send an SMS to people who would love to get free food!</label>
           <label htmlFor="to">To:</label>
           <input
             type="tel"
