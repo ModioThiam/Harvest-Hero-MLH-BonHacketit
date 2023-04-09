@@ -90,7 +90,7 @@ async function run() {
         // Insert multiple documents
         const farmResult = await farmCol.insertMany(farmDocuments);
         console.log(`${farmResult.insertedCount} documents inserted into "farm" collection`);   
-
+ a
         const grocerystorecol = db.collection("grocery stores");
 
             let grocerystoreDocuments = [

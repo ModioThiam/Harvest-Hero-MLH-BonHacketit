@@ -14,6 +14,11 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.2.0",
-    "mongosh": "^1.8.0"
+    "mongoose": "^7.0.3",
+    "mongosh": "^1.8.0",
+    "pino": "^8.11.0"
+  },
+  "devDependencies": {
+    "twilio": "^4.10.0"
   }
 }

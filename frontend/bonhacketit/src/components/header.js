@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Farm from '../pages/farm.js';
-import GroceryStore from '../pages/grocerystore.js';
 import Restaurant from '../pages/restaurant.js';
 import './header.css';
+import SMSForm from "../pages/SMSForm.js";
 
 function Header() {
     return (<div>
@@ -23,12 +23,12 @@ function Header() {
                         <img alt="Farms" src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style={{ width: '300px', height: '200px' }} ></img>
                             <p><Link to="/farm">Farms</Link></p>
                         <img alt="Grocery Stores" src="https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" style={{ width: '300px', height: '200px' }} ></img>
-                            <p><Link to="/grocerystore">Grocery Store</Link></p>
+                            <p><Link to="/grocerystore">SMSForm</Link></p>
                         <div class="text-container">
                                 <Routes>
                                     <Route path="/restaurant" element={<Restaurant />} />
                                     <Route path="/farm" element={<Farm />} />
-                                    <Route path="/grocerystore" element={<GroceryStore />} />
+                                    <Route path="/SMSForm" element={<SMSForm />} />
                                 </Routes>
                         </div>
                     </div>
